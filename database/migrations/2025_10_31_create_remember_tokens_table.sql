@@ -1,11 +1,8 @@
--- ============================================
--- remember_tokens TABLE
--- ============================================
 DROP TABLE IF EXISTS remember_tokens;
 
 CREATE TABLE remember_tokens (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL,
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    user_id INT UNSIGNED NOT NULL,
     selector VARCHAR(191) NOT NULL,
     validator_hash VARCHAR(255) NOT NULL,
     expires_at DATETIME NOT NULL,
