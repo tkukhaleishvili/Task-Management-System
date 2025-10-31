@@ -1,9 +1,12 @@
+-- ============================================
+-- INITIAL DATA SEEDER
+-- ============================================
+
 -- ======= USERS =======
 INSERT INTO users (username, email, password_hash, role, created_at)
 VALUES
   ('admin', 'admin@test.com',
    '$2y$10$T5uJxPEBGEwBGKyYwF8KMOMi6iqsE.5bDdCN.S2Qz4F7IoWcL8Q2G', 'Admin', NOW()),
-   -- password: admin123
   ('manager', 'manager@test.com',
    '$2y$10$T5uJxPEBGEwBGKyYwF8KMOMi6iqsE.5bDdCN.S2Qz4F7IoWcL8Q2G', 'Manager', NOW()),
   ('developer', 'dev@test.com',
@@ -57,3 +60,6 @@ VALUES
   (4, 4, 'Will include ER diagram in the documentation.', NOW()),
   (5, 3, 'Fixed navbar responsiveness on mobile view.', NOW()),
   (6, 1, 'Server setup is in progress, expecting completion tomorrow.', NOW());
+
+-- ======= REMEMBER TOKENS (Optional Example) =======
+-- (You can leave empty initially; will be auto-generated during login)
